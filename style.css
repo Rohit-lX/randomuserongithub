@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(to bottom right, #fcefee, #e0f0ff);
+    min-height: 100vh;
+}
+
+/* ---------- HEADER ---------- */
+#heading {
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #8a2be2, #6a5acd);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#heading h1 {
+    color: white;
+    font-size: 46px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* ---------- BUTTON & INPUT ---------- */
+.butt {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.input {
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 280px;
+    border-radius: 30px;
+    border: 1.5px solid #8a2be2;
+    outline: none;
+    margin-right: 15px;
+    transition: 0.3s ease;
+}
+
+.input:focus {
+    box-shadow: 0 0 10px #d4a1ff;
+    border-color: #6a5acd;
+}
+
+button,
+buttn {
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(to right, #8a2be2, #6a5acd);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+button:hover,
+buttn:hover {
+    background: linear-gradient(to right, #6a5acd, #8a2be2);
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(138, 43, 226, 0.3);
+}
+
+/* ---------- PROFILE GRID ---------- */
+.profiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ---------- PROFILE CARD ---------- */
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 25px 20px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d1b3ff;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, #ff69b4, #ff85c1);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.card a:hover {
+    background: linear-gradient(to right, #ff85c1, #ff69b4);
+}
